@@ -1,14 +1,15 @@
 import './App.css'
-import Eventos from './components/Eventos'
-import Form from './components/Form'
-import Condicional from './components/Condicional'
+import Lista from './components/Lista'
+
 function App() {
 
+    const meusItens = ['Laranjinha🍊 ' , 'Maçãzinha🍎' , 'Ameixinha🫐', 'Uvinha🍇']
 
   return (
     <div className='App'>
-      <h1> Testando Eventos </h1>
-      <Condicional/>
+      <h1> 🍓 Renderização De Lista 🍓</h1>
+      <Lista itens={meusItens}/>
+      <Lista itens= {[]}/>
     </div>
   )
 }
